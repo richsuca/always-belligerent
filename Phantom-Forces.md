@@ -9,3 +9,5 @@ To unlock new weapons, you can rank up gradually, or you can buy weapons with in
 There are also secondaries. There are pistols, revolver's, machine pistols, small shotguns, and mini snipers. Some can be garbage, like the Zip-22(trash pistol), some can be decent, like the 1858 New Army (revolver), or the Tec-9 (machine pistol), and some can be amazing, like the M45A1 (pistol), Deagle 44 (pistol), or the SFG 50 (mini sniper). And every single _GUN_ in the game has attachments. Like, are you going to put a laser on a Nordic War Axe (aka knife, melee, or two-handed blade.) to chop people precisely? _HA_. _Yeah right_. But anyways, I hope you like this essay, and that it is at least 300 words (or a bit more). My hand hurts now. _Byeeee!!!_
 
 Dated: March 13th, 2019.
+
+By Aiden Hsu
