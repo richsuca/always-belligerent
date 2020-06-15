@@ -1,5 +1,5 @@
 ## Use staging area
-GIT's _staging_ area gives you a simple, convenient way to save changes. The only downside is you can only undo to the last staged version.
+GIT's _staging_ area gives you a simple, convenient way to save changes but you can only undo to the last staged version
 
 [Complete setup first](git-notes.md)
 
