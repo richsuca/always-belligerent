@@ -99,7 +99,9 @@ Install DBeaver on the Windows and connect to the DB2 instance
 
 https://dbeaver.io/download/ (I recommended _Install from Microsoft Store_ option)
 
-Get the IP Address of the Ubuntu running in WSL2 using
+Get the IP Address of the Ubuntu running in WSL2 using  
+```
 $ ip address | grep eth0 | grep inet
+```
 
 In DBeaver, use the IP address in the Host to connect (leave the port to default 50000)
