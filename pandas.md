@@ -25,7 +25,8 @@ bf = pd.read_csv('~/big.csv', parse_dates=['date', 'stopTimeSchedule', 'stopTime
 
 ## Set two columns as String [^1]
 ```
-bf = pd.read_csv('~/big.csv', parse_dates=['date', 'stopTimeSchedule', 'stopTimeReal'], dtype={'routeCode': pd.StringDtype(), 'serviceVehicle': pd.StringDtype()})
+bf = pd.read_csv('~/big.csv', parse_dates=['date', 'stopTimeSchedule', 'stopTimeReal'], 
+                  dtype={'routeCode': pd.StringDtype(), 'serviceVehicle': pd.StringDtype()})
 ```
 
 [^1]: to avoid object type, we can't apply min/max on object with mix number and string.
