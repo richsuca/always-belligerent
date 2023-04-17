@@ -1,0 +1,49 @@
+<script>
+    async function get_status(healthUrl) {
+        try {
+            const response = await fetch(healthUrl);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            if (data["status"]) {
+                return data["status"];
+            } else {
+                return "no status found";
+            }
+        }
+        catch (error) {
+            return `${error}`;
+        }
+    }
+
+    function do_rfb() {
+        // check Actuator Health end-points for multiple apps
+        // and display their status
+        const apps = ["app1", "app2", "app3"];
+        for (let appIdx in apps) {
+            const app = apps[appIdx];
+
+            const appDiv = document.createElement("div");
+            appDiv.innerText = `${app} status:`;
+            appDiv.id = `div${app}`;
+            document.body.appendChild(appDiv);
+
+            const appSpan = document.createElement("span");
+            appSpan.id = `${app}`;
+            appSpan.innerText = "checking..";
+            document.getElementById(`div${app}`).appendChild(appSpan);
+
+            const status_msg = get_status(`http://localhost:8080/${app}`);
+            status_msg.then(status =>
+                document.querySelector(`#${app}`).innerText = status
+            );
+        }
+    }
+</script>
+
+<body onload="do_rfb()">
+</body>
